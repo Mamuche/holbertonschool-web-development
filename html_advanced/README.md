@@ -15,7 +15,7 @@ In this and coming projects, you will implement from scratch a webpage from a de
 
 For this first project, you will focus on the HTML structure only - no CSS, no style - just pure HTML semantic.
 
-![frontend projet](image/readme.jpg)
+![frontend projet](images/readme.jpg)
 
 ## **Tasks**
 0. README and objectives!
