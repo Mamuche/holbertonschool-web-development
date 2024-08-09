@@ -9,23 +9,25 @@
 <body>
 
     <header>
-        <!-- Link element with an image -->
-        <a href="index.html">
-            <img src="images/SmileSchool.png" alt="Logo SmileSchool">
-        </a>
-        
-        <!-- Block of 3 link elements -->
-        <nav>
-            <ul>
-                <li><a href="PageCourses.html">COURSES</a></li>
-                <li><a href="PagePricing.html">PRICING</a></li>
-                <li><a href="PageLogin.html">LOGIN</a></li>
-            </ul>
-        </nav>
+        <div class="menu">
+            <!-- Link element with an image -->
+            <a href="index.html">
+                <img src="images/SmileSchool.png" alt="Logo SmileSchool" class="img-smile">
+            </a>
+            
+            <!-- Block of 3 link elements -->
+            <nav>
+                <ul>
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <section>
             <!-- block level 1 -->
-            <div>
+            <div class="title">
                 <h1>Get schooled</h1>
                 <p>SMILES GRIN LAUGH</p>
                 <button>REGISTER FOR FREE</button>
@@ -33,28 +35,28 @@
 
             <!-- block level 2 -->
             <div>
-                <h2>Learn from the pros</h2>
-                <div>
+                <h2><span>Learn</span> from the pros</h2>
+                <div class="pros">
                     <!-- Block 1 -->
-                    <div>
+                    <div class="blocks">
                         <img src="images/Portrait1.png" alt="Portrait 1">
                         <h3>Phillip Massey</h3>
                         <p>«Smile of the year»<br>2018-2019</p>
                     </div>
                     <!-- Block 2 -->
-                    <div>
+                    <div class="blocks">
                         <img src="images/Portrait2.png" alt="Portrait 2">
                         <h3>Nannie Lawrence</h3>
                         <p>Best «little smile»<br>2017</p>
                     </div>
                     <!-- Block 3 -->
-                    <div>
+                    <div class="blocks">
                         <img src="images/Portrait3.png" alt="Portrait 3">
                         <h3>Bruce Walters</h3>
                         <p>Best «Friend Smile»<br>live performance 2019</p>
                     </div>
                     <!-- Block 4 -->
-                    <div>
+                    <div class="blocks">
                         <img src="images/Portrait4.png" alt="Portrait 4">
                         <h3>Henry Hughes</h3>
                         <p>«24h smiles» winner<br>2016-2019</p>
@@ -65,12 +67,12 @@
     </header>
 
     <main>
-        <section>
+        <section class="quote">
             <div>
-                <img src="images/Portrait5.png" alt="Portrait 5">
+                <img src="images/Portrait5.png" alt="Portrait 5" class="img-quote">
             </div>
 
-            <div>
+            <div class="text-quote">
                 <blockquote>
                     <p>«Those tutorials are concise and go straight to the point. I can't think of a better<br>place to learn smiling. And it's so fun!»</p>
                 </blockquote>
@@ -79,95 +81,183 @@
             </div>
         </section>
 
-        <section>
-            <h1>Most popular tutorials</h1>
-            <div>
-                <!-- Block Vidéo 1 -->
-                <div>
-                    <img src="images/Video1.png" alt="Video 1">
+        <section id="videos">
+            <h1>Most <span>popular</span> tutorials</h1>
+
+            <div id="videos_container">
+                <div class="solo_video_container">
+                    <div class="video">
+                        <img src="images/Video1.png" alt="Diagonal smile video">
+                        <svg class="svg" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.860352" fill-rule="evenodd" clip-rule="evenodd" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 32.5L27.5 40.5L27.5 24.5L40.5 32.5Z" fill="#C271FF"/>
+                        </svg>   
+                    </div>
+
                     <h2>Diagonal Smile</h2>
-                    <p>Lorem ipsum dolor sit amet, consect<br>adipiscing elit, sed do eiusmod.</p>
-                    <!-- block for the author information -->
-                    <div>
-                        <img src="images/Portrait1.png" alt="Author Image">
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+
+                    <div class="video_creator_container">
+                        <img src="images/Portrait1.png" alt="Phillip Massey photo">
                         <h3>Phillip Massey</h3>
-                        <!-- block for the rating -->
+                    </div>
+
+                    <div class="stats_container">
                         <div>
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarEmpty.png" alt="Star empty">
-                            <p>8 min</p>
+                            <div>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                            </div>
                         </div>
+
+                        <p>8 min</p>
                     </div>
                 </div>
-                <!-- Block Vidéo 2 -->
-                <div>
-                    <img src="images/Video2.png" alt="Video 2">
+
+                <div class="solo_video_container">
+                    <div class="video">
+                        <img src="images/Video2.png" alt="Sad smile video">
+                        <svg class="svg" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.860352" fill-rule="evenodd" clip-rule="evenodd" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 32.5L27.5 40.5L27.5 24.5L40.5 32.5Z" fill="#C271FF"/>
+                        </svg> 
+                    </div>
+
                     <h2>Sad Smile</h2>
-                    <p>Lorem ipsum dolor sit amet, consect<br>adipiscing elit, sed do eiusmod.</p>
-                    <!-- block for the author information -->
-                    <div>
-                        <img src="images/Portrait1.png" alt="Author Image">
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+
+                    <div class="video_creator_container ">
+                        <img src="images/Portrait1.png" alt="Phillip Massey photo">
                         <h3>Phillip Massey</h3>
-                        <!-- block for the rating -->
+                    </div>
+
+                    <div class="stats_container">
                         <div>
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarEmpty.png" alt="Star empty">
-                            <p>8 min</p>
+                            <div>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                            </div>
                         </div>
+
+                        <p>8 min</p>
                     </div>
                 </div>
-                <!-- Block Vidéo 3 -->
-                <div>
-                    <img src="images/Video3.png" alt="Video 3">
+
+                <div class="solo_video_container">
+                    <div class="video">
+                        <img src="images/Video3.png" alt="Diagonal smile video">
+                        <svg class="svg" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.860352" fill-rule="evenodd" clip-rule="evenodd" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 32.5L27.5 40.5L27.5 24.5L40.5 32.5Z" fill="#C271FF"/>
+                        </svg> 
+                    </div>
+
                     <h2>Natural Smile</h2>
-                    <p>Lorem ipsum dolor sit amet, consect<br>adipiscing elit, sed do eiusmod.</p>
-                    <!-- block for the author information -->
-                    <div>
-                        <img src="images/Portrait1.png" alt="Author Image">
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+
+                    <div class="video_creator_container ">
+                        <img src="images/Portrait1.png" alt="Phillip Massey photo">
                         <h3>Phillip Massey</h3>
-                        <!-- block for the rating -->
+                    </div>
+
+                    <div class="stats_container">
                         <div>
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarEmpty.png" alt="Star empty">
-                            <p>8 min</p>
+                            <div>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                            </div>
                         </div>
+
+                        <p>8 min</p>
                     </div>
                 </div>
-                <!-- Block Vidéo 4 -->
-                <div>
-                    <img src="images/Video4.png" alt="Video 4">
+
+                <div class="solo_video_container">
+                    <div class="video">
+                        <img src="images/Video4.png" alt="Diagonal smile video">
+                        <svg class="svg" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.860352" fill-rule="evenodd" clip-rule="evenodd" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M40.5 32.5L27.5 40.5L27.5 24.5L40.5 32.5Z" fill="#C271FF"/>
+                        </svg> 
+                    </div>
+
                     <h2>Happy Smile</h2>
-                    <p>Lorem ipsum dolor sit amet, consect<br>adipiscing elit, sed do eiusmod.</p>
-                    <!-- block for the author information -->
-                    <div>
-                        <img src="images/Portrait1.png" alt="Author Image">
+                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+
+                    <div class="video_creator_container ">
+                        <img src="images/Portrait1.png" alt="Phillip Massey photo">
                         <h3>Phillip Massey</h3>
-                        <!-- block for the rating -->
+                    </div>
+
+                    <div class="stats_container">
                         <div>
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarFull.png" alt="Star full">
-                            <img src="images/StarEmpty.png" alt="Star empty">
-                            <p>8 min</p>
+                            <div>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                                <svg class="star empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z" fill="currentColor" />
+                                </svg>
+                            </div>
                         </div>
+
+                        <p>8 min</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h1>Free membership</h1>
-            <div>
+        <section class="membership">
+            <h1><span>Free</span> membership</h1>
+            <div class="comment">
                 <!-- Block 1 -->
                 <div>
                     <img src="images/SmilePurple.png" alt="Smile purple">
@@ -196,11 +286,11 @@
             <button>REGISTER FOR FREE</button>
         </section>
 
-        <section>
+        <section class="FAQ">
             <h1>F.A.Q.</h1>
             <div>
                 <!-- Block 1 -->
-                <div>
+                <div class="block1">
                     <!-- Row block 1 -->
                     <div>
                         <h2>How does this work?</h2>
@@ -213,7 +303,7 @@
                     </div>
                 </div>
                 <!-- Block 2 -->
-                <div>
+                <div class="block2">
                     <!-- Row block 1 -->
                     <div>
                         <h2>How does this work?</h2>
@@ -232,7 +322,7 @@
     <footer>
                 <!-- block used later for centering the footer content -->
                 <div>
-                    <div>
+                    <div class="top">
                         <img src="images/SmileSchool.png" alt="Logo SmileSchool">
                         <div>
                             <a href="#"><img src="images/LinkFacebook.png" alt="Link Facebook"></a>

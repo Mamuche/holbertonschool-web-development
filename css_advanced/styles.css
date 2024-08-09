@@ -1,0 +1,545 @@
+@font-face {
+    font-family: "SourceSansPro Light";
+    src: url(./fonts/sourcesanspro-light.otf);
+}
+
+@font-face {
+    font-family: "SourceSansPro Regular";
+    src: url(./fonts/sourcesanspro-regular.otf);
+}
+
+@font-face {
+    font-family: "SourceSansPro Black";
+    src: url(./fonts/sourcesanspro-black.otf);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: "SourceSansPro Regular", sans-serif;
+}
+
+header {
+    background: url('images/Background.png');
+    background-size: cover; /*maintient les proportions de l'image en arriere plan tout en couvrant tout le background*/
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: 1093px;
+}
+
+.menu {
+    display: flex; /*flexbox*/
+    justify-content: space-between;
+    width: 1103px;
+    height: 29px;
+    top: 35px;
+    left: 172px;
+    margin: 0 8em;
+    padding: 50px;
+
+}
+
+.img-smile {
+    width: 167px;
+    height: 29px;
+    top: 35px;
+    left: 172px;
+}
+
+.menu nav ul {
+    list-style: none; /* Enlève les puces de la liste */
+    display: flex;
+    justify-content: space-around;
+    width: 234px;
+    height: 15px;
+    top: 37px;
+    left: 1041px;
+}
+
+.menu nav ul li {
+    margin: 0 25px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    size: 12px;
+    color: white;
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-weight: 700;   
+}
+
+section {
+    padding:0%;
+    margin: 0 8em;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 120px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "SourceSansPro Black", sans-serif;
+    font-weight: 700;
+    line-height: 150.84px;
+    margin-top: 150px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    justify-content: center; /* Centre les éléments verticalement */
+}
+
+    .title p {
+    text-align: center;
+    word-spacing: 4em;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.title button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 50px;/* Arrondir les coins */
+    padding: 20px 50px;/* Espacement interne du bouton */
+    margin: 40px;
+    font-size: 1.2em;
+    box-shadow: 0px 2px 20px 0px #00000080;/* Ombre noire */
+    margin-bottom: 150px;
+}
+
+section h2 {
+    text-align: center;
+    color: white;
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+    section h2 span {
+    color: #C271FF;
+}
+
+.pros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; /*aligne les items verticalement*/
+    flex-wrap: wrap;/* repartit sur plusieurs lignes */
+    margin: 0 4em;
+    width: 1009px;
+    height: 237px;
+    left: 217px;
+}
+
+.blocks {
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.blocks h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family: "SourceSansPro Regular", sans-serif;
+    color: white;
+    margin-bottom: 1px;
+}
+
+.blocks p {
+    text-align: center;
+    font: Source Sans Pro;
+    font-size: 16px;
+    color: white;
+    font-style: italic;
+    line-height: 24px;
+}    
+
+.blocks img {
+   width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.quote {
+    margin: 0;/*réinitialise la marge, le background couvre toute la page*/
+    background-color: #C271FF;
+    background-size: cover;
+    display: flex;
+    align-items: center; /*aligne les items verticalement*/
+    width: 1440px;
+    height: 392px;
+    font-family: "SourceSansPro Regular", sans-serif;
+}
+
+.img-quote {
+    margin: 0 18em;
+    margin-right: 1px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.text-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1px;
+    padding: 50px;
+    color:#f0f0f0;
+    font-family: "SourceSansPro Regular", sans-serif;
+}
+
+.text-quote blockquote,
+.text-quote cite,
+.text-quote p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.text-quote cite {
+    margin-top: 15px;
+}
+
+.text-quote p {
+    font-style: italic;
+}
+
+
+#videos {
+    width: 1228px;
+    height: 450px;
+    top: 1572px;
+    left: 106px;
+    color: #071629;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+#videos h1 {
+    width: 294px;
+    height: 40px;
+    left: 482px;
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+    text-align: center;
+    color: black;
+    white-space: nowrap;/*force les elements à rester sur la même ligne*/ 
+}
+
+#videos h1 span {
+    color: #C271FF;
+}
+
+#videos_container {
+    padding: 75px 75px 0 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.solo_video_container {
+    width: 255px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video {
+    position: relative;
+    cursor: pointer;
+}
+
+.video img {
+    display: block;
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    width: 100%; /* Ajuste cette valeur selon la taille souhaitée */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
+.svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%; /* Ajuste la taille du SVG */
+    height: 20%;
+}
+
+.video::after {
+    content: url("./resources/images/play-button.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    transform: translate(-50%, -50%);
+}
+
+.solo_video_container h2 {
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.solo_video_container p {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    color: #848a93;
+}
+
+.video_creator_container {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.video_creator_container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.video_creator_container h3 {
+    margin-left: 15px;
+    font-family: "SourceSansPro Light", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #c271ff;
+}
+
+.stats_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats_container p {
+    font-family: "SourceSansPro Light", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #c271ff;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+    color: #c271ff;
+}
+
+.star.empty {
+    color: #dddddd;
+}
+
+.membership {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 502px;
+    background-color: black;
+    margin: 0;
+    margin-top: 200px;
+}
+
+.membership h1 {
+    width: 234px;
+    height: 40px;
+    color: white;
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+    .membership h1 span {
+    color: #C271FF;
+    }
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 8em;
+    width: 1009px;
+    height: 237px;
+    top: 758px;
+    left: 217px;
+}
+
+.comment div {
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.comment div h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: "SourceSansPro Regular", sans-serif;
+    color: white;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.comment div p {
+    text-align: center;
+    font: Source Sans Pro;
+    color: white;
+    line-height: 24px;
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.membership button {
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 50px;
+    margin: 40px;
+    font-size: 1.2em;
+    box-shadow: 0px 2px 20px 0px #00000080;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.FAQ {
+    text-align: center;
+    max-width: 1200px;
+    height: 900px;
+}
+
+.FAQ h1 {
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 75px;
+    margin-bottom: 3.5rem;
+    color: black;
+}
+
+/* Conteneur principal des deux blocs */
+.FAQ > div {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row; /* Alignement horizontal des blocs */
+    justify-content: space-between;
+    gap: 3rem; /* Espacement entre les colonnes */
+}
+
+.FAQ .block1, .FAQ .block2 {
+    flex: 1; /* Les deux blocs prennent la même taille */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.FAQ .block1 > div, .FAQ .block2 > div {
+    background-color: white;
+    width: 350px;
+    top: 149px;
+}
+
+.FAQ h2 {
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    color: black;
+    white-space: nowrap;
+}
+
+.FAQ p {
+    font-family: "SourceSansPro Regular", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #777;
+    margin-bottom: 0;
+}
+
+footer {
+    width: 1440px;
+    height: 249px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*centre le contenu verticalement */
+}
+
+footer > div {
+    width: 100%;
+    padding: 0 10rem; /*Espacement interne pour éviter que le contenu touche les bords */
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alignement en haut */
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: auto 0 0 0;
+    color: #777;
+}
+
+footer a {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px; /* Espace entre les icônes */
+}
